@@ -1,0 +1,16 @@
+
+--- PostgreSQL Server Crash Log ---
+
+Date: 2024-12-03
+
+### Trigger:
+Manual manipulation of system table 'pg_class':
+INSERT INTO pg_class (oid, relname) VALUES (999999, 'invalid_class');
+
+### Result:
+Server terminated abnormally.
+
+### Diagnosis:
+Corruption of system catalog table.
+
+--- END OF LOG ---
